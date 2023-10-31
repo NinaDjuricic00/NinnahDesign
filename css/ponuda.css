@@ -1,0 +1,536 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: sans-serif;
+    max-width: 100%;
+  }
+
+
+
+  /*HEADER*/
+
+.banner{
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(rgba(76, 75, 75, 0.75)
+    ,rgba(0,0,0,0.75)), url(../img/poz.jpg);
+    background-size: cover;
+    background-position: center;}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.banner .par{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 220px;
+
+}
+
+/*NAVBAR*/
+
+.topnav {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    margin-top: 0px;
+  }
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16.2px;
+    text-transform: uppercase;
+
+}
+
+.topnav  .navbar {
+    margin: 0 6px;
+    margin-top: 0px;
+    position: relative;
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin-right: 23px;
+    padding-top: 53px;
+}
+
+
+.topnav a.active{
+    padding-right: 470px;
+}
+
+
+.topnav a:hover {
+    background:linear-gradient(0,0, 0, 0.01);
+    color: black;
+}
+
+.topnav a.active {
+    background:linear-gradient(0,0, 0, 0.01);
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.naslov{
+    width: 100%;
+    position: absolute;
+    top: 15%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    margin-top: 150px;
+}
+
+/*ODELA*/
+
+.opis{
+    color: red;
+}
+
+.odela{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr;
+    width: 80%;
+    margin-left: 155px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.ponuda{
+    width: 270px;
+    height: 350px;
+    position: relative;
+}
+.ponuda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    width: 270px;
+    height: 350px;
+    max-width: 100%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+}
+
+.ponuda img:hover{
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px;
+}
+
+
+.ponuda .text{
+    position: absolute;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    padding-left: 4%;
+    font-size: 23px;
+    background-color: rgba(199, 159, 138, 0.925);
+    width: 100%;
+    padding-top: 2px;
+}
+
+
+
+.ponuda .cena{
+    position: absolute;
+    color: white;
+
+    cursor: pointer;
+    margin-top: 315px;   
+    width: 100%;
+    font-size: 19.3px;
+    background-color: rgb(231, 200, 184);
+
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    background-color: rgba(199, 159, 138, 0.925);
+    align-items: center;
+    max-width: 100%;
+    color: white;
+}
+
+#slika{
+    margin: 0 0;
+    padding: 0 0;
+}
+#kontakt{
+    text-decoration: none;
+}
+
+#fot{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#radno-vreme {
+    text-decoration: none;
+
+}
+
+#radno-vreme a{
+    text-decoration: none;
+}
+
+#fot img{
+    padding-right: 0px;
+}
+.soc-links a{
+    display: inline-block;
+    width:  39.7px;
+    height: 39.7px;
+    background-color: rgba(255,255,255,0.2);
+    padding-top: 12px;
+    margin: 0 10px 10px 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition:  all 0.5s ease;
+}
+
+.soc-links a:hover{
+    color: black;
+    background-color: #fff;
+}
+
+
+
+  @media screen and (max-width: 1020px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      padding-right: 10px;
+      padding-top: 50px;
+    }
+  }
+
+  @media screen and (max-width: 1020px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right:0;
+      top: 0;
+      z-index: 1000;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+    .topnav.responsive .navbar{
+      float: none;
+      display: block;
+      text-align: center;
+      z-index: 1000; 
+      background-color: rgba(199, 159, 138);
+    }
+
+    .odela {
+        width: 80%;
+        margin-left: 180px;
+    }
+
+    
+}
+  
+
+
+@media screen and (max-width: 652px) {
+
+    .topnav a.active{
+        padding-right: 0;
+    }
+
+    .topnav a.active{
+        padding: 0;
+    }
+
+    .topnav a .icon{
+        padding: 0;
+    }
+    .odela {
+        width: 50%;
+        margin-right: auto;
+        margin-left: 120px;
+    }
+}
+
+@media screen and (max-width: 672px) {
+
+    .topnav a.active{
+        padding-right: 0;
+    }
+
+    .topnav a.active{
+        padding: 0;
+    }
+
+    .topnav a .icon{
+        padding: 0;
+    }
+
+    .letovanje{
+        margin-left: 0px;
+    }
+
+    .odela {
+        width: 50%;
+        margin-right: auto;
+        margin-left: 180px;
+    }
+}
+
+
+@media screen and (max-width: 997px) {
+
+    .odela {
+        width: 80%;
+
+        margin-left: 140px;
+    }
+}
+
+@media screen and (max-width: 912px) {
+
+    .odela {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width: 792px) {
+
+    .odela {
+        width: 80%;
+        margin-left: 90px;
+    }
+}
+
+@media screen and (max-width: 775px) {
+
+    .odela {
+        width: 50%;
+        margin-right: auto;
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 705px) {
+
+    .odela {
+        width: 50%;
+        margin-right: auto;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width:665px) {
+    .odela {
+    width: 50%;
+    margin-right: auto;
+    margin-left: 180px;
+}
+    
+}
+
+@media screen and (max-width: 561px) {
+
+    .odela {
+        width: 50%;
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 526px) {
+
+    .odela {
+        width: 50%;
+
+        margin-left: 130px;
+    }
+}
+
+
+@media screen and (max-width: 481px) {
+
+    .odela {
+        width: 50%;
+        margin-left: 100px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 460px) {
+
+    .odela {
+        width: 50%;
+        margin-left: 90px;
+    }
+}
+
+
+@media screen and (max-width: 442px) {
+
+    .odela {
+        width: 50%;
+        margin-left: 80px;
+
+    } 
+
+    .ponuda img{
+        width:240px;
+        height: 300px;
+    }
+
+    .ponuda .text{
+        padding-left: 5px;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    
+    
+    
+    .ponuda .cena{
+        position: absolute;
+        color: white;
+        padding-left: 35px;
+        cursor: pointer;
+        margin-top: 270px;   
+        padding-left: 20px;
+        font-size: 17px;
+
+    }
+    
+}
+
+@media screen and (max-width: 410px) {
+
+    .odela {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 70px;
+
+
+    } 
+
+   
+}
+
+@media screen and (max-width: 392px) {
+
+    .odela{
+        width: 50%;
+        margin-left: 40px;
+    } 
+
+   
+}
+
+
+@media screen and (max-width: 318px) {
+
+    .odela{
+        width: 80%;
+
+        margin-left: 0px;
+    } 
+
+   
+}
+
+
+@media screen and (max-width: 264px) {
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right:0;
+      top: 0;
+      z-index: 1000;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .text {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: 25px;
+    }
+
+    .banner {
+        width: 100%;
+        height: 65vh;
+        background-image: linear-gradient(rgba(76, 75, 75, 0.75)
+        ,rgba(0,0,0,0.75)), url(../img/ponuda.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .ponuda img{
+        width:120px;
+        height: 180px;
+    }
+
+    .ponuda{
+        width: 50%;
+        height: 80%;
+        margin-left: 0px;
+    }
+
+    
+}
+
+
+@media screen and  (max-width: 406px){
+    .odela{
+        font-size: 60px;   
+}}
+
+
+@media screen and  (max-width: 474px){
+    .odela{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+}
+
+
